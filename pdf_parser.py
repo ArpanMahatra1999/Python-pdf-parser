@@ -71,11 +71,9 @@ class Pdf:
         """
         try:
             if i is None:
-                os.mkdir(self._table_title)
                 for j in range(len(self._tables)):
                     create_csv(self._tables[j+1], self._table_title, j+1)
             elif 0 < i <= len(self._tables):
-                os.mkdir(self._table_title)
                 self._dataframe = self._tables[i]
                 self._csv = create_csv(self._dataframe, self._table_title, i)
                 return self._csv
