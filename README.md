@@ -11,7 +11,7 @@ Steps to Install:
 1. Open project in IDE.
 2. In Terminal, run "pip install -r requirements.txt".
 3. Download and add "Ghostscript" to PATH of System Environment Variables.
-4. In Terminal, run "python"
+4. In Terminal, run "python" or run "python app.py" to test directly.
 - from pdf_parser import Pdf
 - pdf = Pdf()
 - pdf.set_pdf_file("BOQ .pdf") .....so on
