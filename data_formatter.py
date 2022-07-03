@@ -11,4 +11,4 @@ def create_csv(dataframe, table_title, i):
     Convert dataframe to csv
     """
     dataframe.to_csv(f'{table_title}/{i}.csv')
-    print(f'Downloaded to {table_title}\{i}.csv')
+    return f'Downloaded to {table_title}\{i}.csv'

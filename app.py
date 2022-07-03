@@ -1,4 +1,3 @@
-import os.path
 from tkinter import *
 from tkinter import filedialog
 
@@ -85,9 +84,8 @@ def browse_files():
     global filename
     filename = filedialog.askopenfilename(defaultextension='.pdf')
     label.config(text=filename)
-    basename = os.path.basename(filename)
-    pdf.set_pdf_file(basename)
-    return basename
+    pdf.set_pdf_file(filename)
+    return filename
 
 
 # creating label
